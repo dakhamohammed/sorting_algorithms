@@ -1,7 +1,3 @@
-/*
- * Created by Mohammed Dakhamat on 21/10/2023.
- */
-
 #ifndef SORT_H
 #define SORT_H
 
