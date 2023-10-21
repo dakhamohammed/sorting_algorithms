@@ -6,3 +6,10 @@
   - How to select the best sorting algorithm for a given input
   - What is a stable sorting algorithm
 
+## Tasks ##
+
+1. [ ] Task-0: **Bubble sort**
+   - Function that sorts an array of integers in ascending order using the Bubble sort algorithm.
+     - big O notation: **O(n^2)**
+     - Files: ***0-bubble_sort.c***, ***0-O***
+
