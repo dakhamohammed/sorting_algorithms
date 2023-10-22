@@ -1,46 +1,51 @@
 #include "sort.h"
 
 /**
- * insertion_sort_list - function that sorts a doubly linked list of integers in ascending order
- * using the Insertion sort algorithm.
+ * insertion_sort_list - function that sorts a doubly linked list of integers
+ * in ascending order using the Insertion sort algorithm.
  * @list: pointer to the list that need to be sorted.
  *
  * Return: void, no return.
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *sorted = NULL;
-	listint_t *current_node;
-	listint_t *next_node;
+	listint_t *current, *inset_node, *temp;
 
-	if (*list == NULL || (*list)->next == NULL)
+	if (*list == NULL || list == NULL || (*list)->next == NULL)
 	{
 		return;
 	}
 
-	current_node = *list;
-
-	while (current_node != NULL)
+	for (current = (*list)->next; current != NULL; current = temp)
 	{
-		next_node = current_node->next;
+		temp = current->next;
+		inset_node = current->prev;
 
-		while (sorted != NULL && sorted->n < current_node->n)
+		while (inset_node != NULL && current->n < inset_node->n)
 		{
-			sorted = sorted->next;
-		}
+			inset_node->next = current->next;
 
-		if(sorted == NULL)
-		{
-			current_node->prev = sorted->prev;
-			current_node->next = NULL;
-			sorted->next = current_node;
-		}
-		else if (sorted->prev == NULL)
-		{
-			// TODO: Open Clion 2023.2.2 IDE and continue.
-		}
+			if (current->next != NULL)
+			{
+				current->next->prev = inset_node;
+			}
 
-		current_node = next_node;
+			current->prev = inset_node->prev;
+			current->next = inset_node;
+
+			if (inset_node->prev != NULL)
+			{
+				inset_node->prev->next = current;
+			}
+			else
+			{
+				*list = current;
+			}
+
+			inset_node->prev = current;
+			inset_node = current->prev;
+			print_list(*list);
+		}
 	}
 }
 
