@@ -21,3 +21,19 @@
         - in the worst case: O(n^2)
       - files: ***1-insertion_sort_list.c***, ***1-O***
 
+3. [x] Task-2: **Selection sort**
+   - Function that sorts an array of integers in ascending order using the Selection sort algorithm.
+     - big O notation:
+       - in the best case: O(n^2)
+       - in the average case: O(n^2)
+       - in the worst case: O(n^2)
+     - files: ***2-selection_sort.c***, ***2-O***
+
+4. [x] Task-3: **Quick sort**
+   - Function that sorts an array of integers in ascending order using the Quick sort algorithm.
+     - big O notation:
+       - in the best case: O(nlog(n))
+       - in the average case: O(nlog(n))
+       - in the worst case: O(n^2)
+     - files: ***3-quick_sort.c***, ***3-O***
+
