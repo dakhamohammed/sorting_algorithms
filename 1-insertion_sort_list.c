@@ -61,11 +61,12 @@ int size_of(listint_t *list)
 {
 	int list_size = 0;
 
-	while (list != NULL) {
+	while (list != NULL)
+	{
 		list_size++;
 		list = list->next;
 	}
 
-	return list_size;
+	return (list_size);
 }
 
