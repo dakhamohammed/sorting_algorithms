@@ -1,5 +1,7 @@
 #include "sort.h"
 
+int size_of(listint_t *list);
+
 /**
  * insertion_sort_list - function that sorts a doubly linked list of integers
  * in ascending order using the Insertion sort algorithm.
@@ -47,5 +49,23 @@ void insertion_sort_list(listint_t **list)
 			print_list(*list);
 		}
 	}
+}
+
+/**
+ * size_of - calculate the size of the given doubly linked list.
+ * @list: pointer to the list.
+ *
+ * Return: size of the list.
+ */
+int size_of(listint_t *list)
+{
+	int list_size = 0;
+
+	while (list != NULL) {
+		list_size++;
+		list = list->next;
+	}
+
+	return list_size;
 }
 
