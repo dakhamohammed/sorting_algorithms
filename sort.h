@@ -1,7 +1,8 @@
 #ifndef SORT_H
 #define SORT_H
 
-#include "unistd.h"
+#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -26,6 +27,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void counting_sort(int *array, size_t size);
 
 #endif /* SORT_H */
 

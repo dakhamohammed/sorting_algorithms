@@ -50,3 +50,11 @@
        - in the worst case: O(n^2)
      - file: ***101-cocktail_sort_list.c***, ***101-O***
 
+7. [x] Task-6: **Counting sort**
+   - Function that sorts an array of integers in ascending order using the Counting sort algorithm.
+     - big O notation:
+       - in the best case: O(n+k)
+       - in the average case: O(n+k)
+       - in the worst case: O(n+k)
+     - file: ***102-counting_sort.c**, ***102-O***
+
