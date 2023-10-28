@@ -37,3 +37,8 @@
        - in the worst case: O(n^2)
      - files: ***3-quick_sort.c***, ***3-O***
 
+5. [x] Task-4: **Shell sort - Knuth Sequence**
+   - Function that sorts an array of integers in ascending order using the Shell sort algorithm, using the Knuth sequence.
+     - big O notation: No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap.
+     - file: ***100-shell_sort.c***
+
