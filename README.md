@@ -42,3 +42,11 @@
      - big O notation: No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap.
      - file: ***100-shell_sort.c***
 
+6. [x] Task-5: **Cocktail shaker sort**
+   - Function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm.
+     - big O notation:
+       - in the best case: O(n)
+       - in the average case: O(n^2)
+       - in the worst case: O(n^2)
+     - file: ***101-cocktail_sort_list.c***, ***101-O***
+
