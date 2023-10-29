@@ -59,7 +59,7 @@ int _max(int *array, int size)
 }
 
 /**
- * radix_countsort - function sort the significant digits of an array of
+ * radix_count_sort - function sort the significant digits of an array of
  * integers in ascending order using the counting sort algorithm.
  * @array: array of integers.
  * @size: size of the array.
@@ -84,7 +84,7 @@ void radix_count_sort(int *array, size_t size, int sig, int *buffer)
 	}
 
 	for (i = size - 1; (int)i >= 0; i--)
-        {
+	{
 		buffer[count[(array[i] / sig) % 10] - 1] = array[i];
 		count[(array[i] / sig) % 10] -= 1;
 	}
